@@ -24,4 +24,9 @@ public class EnemyDetection : MonoBehaviour
 
         return false;
     }
+
+    public float PlayerDistance()
+    {
+        return Vector3.Distance(transform.position, playerTransform.position);
+    }
 }
